@@ -108,3 +108,5 @@ A AADL atua na modelagem e validação da arquitetura do sistema. O ROS é utili
 *A use case in model-based robot development using AADL and ROS.* Disponível em: https://rose-workshops.github.io/files/rose2018/papers/rose2018_2.pdf
 
 ROS - Robotic Operating System. Disponível em: https://www.ros.org/
+
+Cyber-Physical Systems: An Overview. Disponível em: https://www.fortinet.com/resources/cyberglossary/cyber-physical-systems
