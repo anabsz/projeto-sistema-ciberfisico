@@ -39,4 +39,7 @@ if __name__ == "__main__":
 ### chassis.set_velocity()
 - Primeiro parâmentro: velocidade do motor
 - Segundo parâmentro: direção do carro
+  - 90°: para frente
+  - 180°: para esquerda
+  - 270°: para trás
 - Terceiro parâmetro: sentido das rodas (horário/antihorário)
