@@ -97,23 +97,82 @@ Antes de abstrair um sistema, é necessário compreender seus elementos. No noss
 ---
 <!-- _class: style_b -->
 
-### Exemplo em Texto AADL
+### Exemplo de Diagrama AADL
 
-```aadl
-bus Cabo end Cabo;
+* Barramentos
+  ```aadl
+  bus USB
+  end USB;
 
--- Micro servo da Garra
-device MicroServo
+  bus Ethernet
+  end Ethernet;
+  ```
+* Processador
+  ```aadl
+  processor SoC
+    features
+      eth   : requires bus access Ethernet
+      usb_1 : provides bus access ;
+      usb_2 : provides bus access ;
+      hdmi  : provides bus access ;
+  end SoC;
+  ```
+
+---
+<!-- _class: style_b -->
+
+- Dispositivos
+
+  ```aadl
+  device Camera
   features
-    bus : requires bus access Cabo;
-end MicroServo;
-```
+    video_out  : out data port;
+    usb_camera : requires bus access;
+  end Camera;
+  ```
 
-> Comentários em AADL `-- comentário em linha`
+* Sistema
+
+  ```aadl
+  system RobotHW
+    features
+      video_pass : out event data port;
+  end RobotHW;
+  ```
+
+---
+<!-- _class: style_b -->
+
+- Implementação
+
+  ```aadl
+  system implementation RobotHW.impl
+	subcomponents
+		soc: processor SoC;
+		camera: device Camera;
+
+	connections
+		conn1: feature camera.usb_camera -> soc.usb_1;
+		conn2: port camera.video_out -> video_pass;
+  end RobotHW.impl;
+  ```
+
+---
+<!-- _class: style_b -->
+
+### Diagrama Gerado pelo OSATE
+
+![w:900px](img/image4.png)
+
+---
+
+**Implemetação Completa.**
+
+![w:1300px](img/image3.png)
 
 ---
 <!-- _class: style_c -->
-<style scoped>section { font-size: 20px; }</style>
+<style scoped>section { font-size: 24px; }</style>
 
 ## Referências
 
