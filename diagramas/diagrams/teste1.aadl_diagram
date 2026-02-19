@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="f21e1ff6-031d-4fb2-8755-108807549968" manual="true">
+    <element uuid="8663c09f-2798-46f1-8aaf-4715a0efdc2f" manual="true">
+      <element uuid="f4093ed1-f33e-4745-9b0f-1a8338c1f01c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>b1</seg>
+      </bo>
+      <bendpoints>
+        <point x="300.066650390625" y="394.0"/>
+        <point x="300.066650390625" y="320.0"/>
+        <point x="306.066650390625" y="320.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="bad27591-6aa1-4dd4-84fb-0cea634bb29b" manual="true">
+      <element uuid="7e939b0b-3bda-486f-96c5-c95c50a137c0" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>b2</seg>
+      </bo>
+      <bendpoints>
+        <point x="310.066650390625" y="310.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="1037d8ab-7931-4c20-8cfa-f86b879ac13a" manual="true">
+      <element uuid="9014d34d-5d42-4145-9941-efab6f0517a2" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>b3</seg>
+      </bo>
+      <bendpoints>
+        <point x="300.066650390625" y="226.0"/>
+        <point x="300.066650390625" y="300.0"/>
+        <point x="306.066650390625" y="300.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="3b099063-5fd0-478d-be6a-a6f132aa854d" manual="true">
+      <element uuid="cb34a07d-7532-4a98-ba06-57a789d6a24c" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>b4</seg>
+      </bo>
+      <bendpoints>
+        <point x="310.066650390625" y="448.0"/>
+      </bendpoints>
+    </element>
+    <element uuid="6448d9e0-844d-42ed-bc8b-587e87191c00" manual="true">
+      <element uuid="67889f44-67b9-4175-900c-3f71ef545374" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>usb</seg>
+        </bo>
+        <position x="217.4533176422119" y="10.0"/>
+      </element>
+      <element uuid="e01e2075-74bb-4fdd-9fac-ce28bf7f4ae9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>video_out</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>camera</seg>
+      </bo>
+      <position x="37.78667449951172" y="264.0"/>
+      <size width="252.2799835205078" height="64.0"/>
+    </element>
+    <element uuid="57a5bdd2-af77-40eb-a3e8-70f69b0cdb5d" manual="true">
+      <element uuid="7773515b-1acf-4d42-8d17-453b5f17534e" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>eth</seg>
+        </bo>
+        <position x="119.26666450500488" y="64.0"/>
+      </element>
+      <element uuid="3cb5e5aa-e98d-40ba-bd41-7ab9a7d6df51" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>usb</seg>
+        </bo>
+        <position x="117.01333236694336" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>cpu</seg>
+      </bo>
+      <position x="138.22665977478027" y="348.0"/>
+      <size width="151.83999824523926" height="118.0"/>
+    </element>
+    <element uuid="136a53a0-f983-4157-afbb-74f997816a4a" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>eth_bus</seg>
+      </bo>
+      <position x="310.066650390625" y="430.5"/>
+      <size width="108.66666412353516" height="35.0"/>
+    </element>
+    <element uuid="f3351ee4-16bf-4930-ab82-ca8d52d2d4a4" manual="true">
+      <element uuid="6da282ef-d6ce-40df-96e3-58b73c43e9c6" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>hdmi</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="c608f128-271f-4318-bd27-267a234df7aa" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>video_in</seg>
+        </bo>
+        <position y="64.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>screen</seg>
+      </bo>
+      <position x="20.0" y="40.0"/>
+      <size width="228.1199951171875" height="118.0"/>
+    </element>
+    <element uuid="c247b705-d314-4c4f-ae7e-65f25df164ab" manual="true">
+      <element uuid="8d1c9689-8490-423a-9063-784d29745828" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>distance_out</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <element uuid="200a1808-8f36-4ce4-93c2-e8c131b2f463" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>usb</seg>
+        </bo>
+        <position x="243.23999214172363" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>sonar</seg>
+      </bo>
+      <position x="12.0" y="180.0"/>
+      <size width="278.06665802001953" height="64.0"/>
+    </element>
+    <element uuid="de1f31cb-ac06-4e26-bd20-dda23bc5a1e4" manual="true">
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>usb_bus</seg>
+      </bo>
+      <position x="310.0" y="290.0"/>
+      <size width="110.91999816894531" height="40.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>RobotHW.impl</seg>
+    </bo>
+    <position/>
+    <size width="432.98663330078125" height="478.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>ExemploAADL::RobotHW.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

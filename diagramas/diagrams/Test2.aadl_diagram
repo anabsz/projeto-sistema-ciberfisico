@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="57c92841-e9f2-4aca-b5a5-857a4d023f25" manual="true">
+    <element uuid="025eb920-4691-4d94-89d3-63204f28929f" manual="true">
+      <element uuid="1e006699-b940-4464-a180-ca98a7a5d647" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>b3</seg>
+      </bo>
+    </element>
+    <element uuid="3013b3f2-e15a-48f3-aa0f-7079db60320a" manual="true">
+      <element uuid="a9393ca7-5930-4814-a85b-5efdcd6a8e3f" manual="true">
+        <bo>
+          <seg>tag</seg>
+          <seg>unidirectional</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>connection</seg>
+        <seg>b4</seg>
+      </bo>
+    </element>
+    <element uuid="75b1c9cd-8e9a-4e27-badf-69af6a1cd7a1" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>sonar_pass</seg>
+      </bo>
+      <position x="807.9466705322266" y="106.0"/>
+    </element>
+    <element uuid="f980a9ae-5636-4554-862a-ae25d63d97d0" manual="true" dockArea="right">
+      <bo>
+        <seg>feature</seg>
+        <seg>video_pass</seg>
+      </bo>
+      <position x="809.6266708374023" y="190.0"/>
+    </element>
+    <element uuid="ed0c74dc-7431-4daa-8ec5-05e6e68d7e99" manual="true">
+      <element uuid="d58d212b-5714-49ca-aedc-745a6a863147" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>usb_camera</seg>
+        </bo>
+        <position x="193.8000030517578" y="10.0"/>
+      </element>
+      <element uuid="5b95bb90-78da-449e-8387-e7fa0790acf3" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>video_out</seg>
+        </bo>
+        <position x="208.36001586914062" y="64.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>camera</seg>
+      </bo>
+      <position x="24.053329467773438" y="126.0"/>
+      <size width="281.40000915527344" height="118.0"/>
+    </element>
+    <element uuid="c9513eb0-c605-4bb0-a42e-10bc706e67ba" manual="true">
+      <element uuid="a8fcdbce-0ecc-498e-bd9b-92bab45f34c8" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>hdmi_in</seg>
+        </bo>
+        <position x="162.86666107177734" y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>screen</seg>
+      </bo>
+      <position x="80.6400146484375" y="42.0"/>
+      <size width="224.81332397460938" height="64.0"/>
+    </element>
+    <element uuid="fc0d0ae5-017c-4733-ba1b-e07d57bb816d" manual="true">
+      <element uuid="81c90e85-6e51-4b4f-a7ce-1d8243a9407c" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>distance_out</seg>
+        </bo>
+        <position x="186.54666137695312" y="10.0"/>
+      </element>
+      <element uuid="810d5bed-92fe-4a76-bacf-c296028289c9" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>usb</seg>
+        </bo>
+        <position y="10.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>sonar</seg>
+      </bo>
+      <position x="524.3866729736328" y="96.0"/>
+      <size width="278.06665802001953" height="64.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>RobotHW.impl</seg>
+    </bo>
+    <position x="70.0"/>
+    <size width="890.0" height="256.0"/>
+  </element>
+  <config type="structure" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>classifier</seg>
+      <seg>ExemploAADL::RobotHW.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>

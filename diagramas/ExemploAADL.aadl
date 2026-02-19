@@ -1,0 +1,107 @@
+package ExemploAADL
+public
+-- Barramentos
+
+bus USB
+end USB;
+
+bus Ethernet
+end Ethernet;
+
+-- Exemplo de System on Board (RB Pi, Odroid, etc)
+processor SoC
+	features
+		eth		: requires bus access Ethernet; 
+		usb_1	: provides bus access ;
+		usb_2	: provides bus access ;
+		hdmi	: provides bus access ;
+		
+end SoC;
+	
+-- Dispositivos
+device Camera
+features
+  video_out  : out data port;
+  usb_camera : requires bus access;
+end Camera;
+
+device Ultrasom
+features
+  distance_out : out data port;
+  usb          : requires bus access;
+end Ultrasom;
+
+device Screen
+features
+  hdmi_in     : requires bus access;
+end Screen;
+
+-- Implementação do Hardware
+system RobotHW
+	features
+		video_pass : out event data port;
+		sonar_pass : out event data port;
+end RobotHW;
+
+system implementation RobotHW.impl
+	subcomponents
+		soc: processor SoC;
+		camera: device Camera;
+		sonar: device Ultrasom;
+		screen: device Screen;
+
+	connections
+		b1: feature  sonar.usb -> soc.usb_1;
+		b2: feature camera.usb_camera -> soc.usb_2;
+		b3 : port sonar.distance_out -> sonar_pass;
+		b4 : port camera.video_out -> video_pass;
+		b5: feature screen.hdmi_in -> soc.hdmi;
+end RobotHW.impl;
+
+-- Processos
+process ControlInput
+features
+  cmd_out : out data port;
+end ControlInput;
+
+process SpeedController
+features
+  cmd_in  : in  data port;
+  speed_out : out data port;
+end SpeedController;
+
+process MotorDriver
+features
+  speed_in : in data port;
+end MotorDriver;
+
+-- Implementação do Software
+system RobotSW
+end RobotSW;
+
+system implementation RobotSW.impl
+subcomponents
+  input      : process ControlInput;
+  controller : process SpeedController;
+  driver     : process MotorDriver;
+
+connections
+  c1 : port input.cmd_out      -> controller.cmd_in;
+  c2 : port controller.speed_out -> driver.speed_in;
+end RobotSW.impl;
+
+-- Implmentação do Robo
+system Robot
+end Robot;
+
+system implementation Robot.impl
+subcomponents
+  hw : system RobotHW.impl;
+  sw : system RobotSW.impl;
+
+properties
+  Actual_Processor_Binding => (reference (hw.soc))
+    applies to sw.input, sw.controller, sw.driver;
+end Robot.impl;
+
+end ExemploAADL;

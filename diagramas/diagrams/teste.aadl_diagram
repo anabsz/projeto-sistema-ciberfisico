@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="3b51c5c2-b951-49c9-bfac-3e320ae0a53e" manual="true">
+    <element uuid="f275af00-ef41-49f2-9d0a-88143af58850" manual="true">
+      <element uuid="76426471-f100-4c1d-828c-b945b4983be8" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>camera</seg>
+        </bo>
+        <position x="12.0" y="207.0"/>
+        <size width="106.19999694824219" height="35.0"/>
+      </element>
+      <element uuid="7f5410c8-d224-4753-96e8-1ba5909e4832" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>cpu</seg>
+        </bo>
+        <position x="12.0" y="42.0"/>
+        <size width="82.18666648864746" height="35.0"/>
+      </element>
+      <element uuid="cc6320ee-2f24-4c7a-b174-05659c4afb2e" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>screen</seg>
+        </bo>
+        <position x="12.0" y="152.0"/>
+        <size width="100.91999816894531" height="35.0"/>
+      </element>
+      <element uuid="80956814-3586-4ad9-baff-ec49101c4b57" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>sonar</seg>
+        </bo>
+        <position x="12.0" y="97.0"/>
+        <size width="95.02666473388672" height="35.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>hw</seg>
+      </bo>
+      <position x="176.34666442871094" y="42.0"/>
+      <size width="130.1999969482422" height="254.0"/>
+    </element>
+    <element uuid="efdfd5f1-9012-4f16-acf3-5660dbd480ca" manual="true">
+      <element uuid="d70bba57-b312-4e71-a67d-7f14df12be1d" manual="true">
+        <element uuid="7823830c-9b53-470c-bbd6-fa13e4f56c0a" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+            <seg>7f5410c8-d224-4753-96e8-1ba5909e4832</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>controller</seg>
+        </bo>
+        <position x="12.0" y="152.0"/>
+        <size width="120.34666442871094" height="35.0"/>
+      </element>
+      <element uuid="5d10273d-4a35-4b87-b8f3-50d14e862fe0" manual="true">
+        <element uuid="1c39fca9-3a50-4d57-a9b3-27c473951f49" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+            <seg>7f5410c8-d224-4753-96e8-1ba5909e4832</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>driver</seg>
+        </bo>
+        <position x="12.0" y="97.0"/>
+        <size width="96.2933349609375" height="35.0"/>
+      </element>
+      <element uuid="af158e5b-97a2-4c4b-bcdb-a340af9492b5" manual="true">
+        <element uuid="f11c4228-2425-419a-a65e-b6ac9033a6da" manual="true">
+          <bo>
+            <seg>pvg</seg>
+            <seg>Deployment_Properties::Actual_Processor_Binding</seg>
+            <seg>7f5410c8-d224-4753-96e8-1ba5909e4832</seg>
+          </bo>
+        </element>
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>input</seg>
+        </bo>
+        <position x="12.0" y="42.0"/>
+        <size width="92.27999877929688" height="35.0"/>
+      </element>
+      <bo>
+        <seg>subcomponent</seg>
+        <seg>sw</seg>
+      </bo>
+      <position x="12.0" y="42.0"/>
+      <size width="144.34666442871094" height="199.0"/>
+    </element>
+    <bo>
+      <seg>classifier</seg>
+      <seg>Robot.impl</seg>
+    </bo>
+    <position/>
+    <size width="318.5466613769531" height="308.0"/>
+  </element>
+  <config type="processorBinding" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties>
+      <property>deployment_properties::actual_processor_binding</property>
+    </enabledAadlProperties>
+    <context>
+      <seg>classifier</seg>
+      <seg>ExemploAADL::Robot.impl</seg>
+    </context>
+  </config>
+</diagram:Diagram>
