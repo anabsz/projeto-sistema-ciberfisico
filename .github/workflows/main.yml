@@ -34,7 +34,7 @@ jobs:
           mkdir -p slides/theme
           mkdir -p fichamento/theme
           curl -L -o slides/theme/barbosa.css \
-            https://raw.githubusercontent.com/dvanael/marp-barbosa/refs/heads/main/theme/barbosa.css
+            https://raw.githubusercontent.com/anabs/marp-barbosa/refs/heads/main/theme/barbosa.css
           cp slides/theme/barbosa.css fichamento/theme/barbosa.css
 
       # Diretórios de saída
